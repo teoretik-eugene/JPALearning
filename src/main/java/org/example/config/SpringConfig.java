@@ -21,6 +21,7 @@ import java.util.Properties;
 @Configuration
 @ComponentScan("org.example")
 @PropertySource("classpath:hibernate.properties")
+@EnableJpaRepositories("ru.eugene.mvcfirst.config.repositories")
 @EnableTransactionManagement
 public class SpringConfig {
 
